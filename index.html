@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Life Calendar : Your life in weeks</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <h1>Life Calendar</h1>
+      <h2>Your life in weeks</h2>
+
+      <form>
+        <label>
+          Set your birthdate:
+          <input
+            type="date"
+            name="birthdate"
+            placeholder="dd/mm/yyyy"
+            id="birthdate-input"
+            required
+          />
+          <span class="validity"></span>
+        </label>
+        <button id="birthdate-submit-button" type="button">
+          Submit
+        </button>
+      </form>
+
+      <div id="checkerboard"></div>
+
+      <div id="footer">
+        Based on Tim Urban's article on Wait But Why.
+        <a href="https://www.bryanbraun.com/your-life/weeks.html">
+          Click here to read it.
+        </a>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
